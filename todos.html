@@ -107,7 +107,6 @@
                 var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
                 tasks.push(taskText);
                 localStorage.setItem("tasks", JSON.stringify(tasks));
-                sessionStorage.setItem("tasks", JSON.stringify(tasks));
     
                 // Reset input field
                 newTaskInput.value = "";
